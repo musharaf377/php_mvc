@@ -1,0 +1,15 @@
+{
+    "name": "v/ap",
+    "autoload": {
+        "psr-4": {
+            "APP\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mosharof",
+            "email": "freelancer.musharaf@gmail.com"
+        }
+    ],
+    "require": {}
+}
