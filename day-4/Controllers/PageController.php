@@ -1,6 +1,10 @@
 <?php
-namespace APP\Controller;
+
+namespace APP\Controllers;
+
 use APP\Core\Controller;
+
+
 class PageController extends Controller{
     public function about()
     {

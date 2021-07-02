@@ -3,13 +3,8 @@
 namespace APP\Core;
 
 class Router{
-    public function test()
-    {       
-        echo "hello ";
-    }
-
-    protected $controller;
-
+   
+    
     protected  array $routes = [];
 
     public function get($path, $callback)
@@ -38,11 +33,13 @@ class Router{
         // die();
 
         if(is_string($callback)){
-            $this->render_view($callback);
+            return $this->render_view($callback);
         }
 
+    
+
         if(is_array($callback)){
-            $this->Controller = new $callback[0]();
+            $callback[0] = new $callback[0]();
         }
 
         return call_user_func($callback);
